@@ -1,38 +1,116 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: 'Karla', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1,
+h2,
+h3 {
+  font-family: 'Markazi Text', serif;
+  font-weight: bold;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.light-text {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.overlap-images {
+  position: relative;
+  width: 100%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+#one-chef {
+  position: absolute;
+  transform: scale(0.8) translate(0, -75%);
+  max-width: 300px;
+}
+
+#two-chefs {
+  position: absolute;
+  z-index: 100;
+  transform: scale(0.8) translate(50%, -25%);
+  max-width: 300px;
+}
+
+@media (max-width: 1000px) {
+  .overlap-images {
+    position: static;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
-  to {
-    transform: rotate(360deg);
+
+  #one-chef {
+    position: static;
+    transform: none;
   }
+
+  #two-chefs {
+    position: static;
+    z-index: 100;
+    transform: none;
+  }
+}
+
+section {}
+
+.hero,
+.testimonials {
+  background-color: #495E57;
+}
+
+a {
+  text-decoration: none !important;
+  color: inherit !important;
+  padding: 0;
+}
+
+a:hover {
+  opacity: 50%;
+  transition: 0.2s;
+}
+
+.yellow-btn {
+  background-color: #F4CE14;
+  padding: 10px;
+  border: none;
+  border-radius: 3em;
+}
+
+form {
+  max-width: 500px;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+
+.error {
+  color: red;
+  border-color: red;
+  ;
+}
+
+.review-img {
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+
+ul {
+  padding-left: 0 !important;
+}
+
+footer {
+  padding-top: 20px;
+  background-color: #495E57;
+  display: flex;
 }

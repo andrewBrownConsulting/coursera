@@ -1,8 +1,18 @@
 export default function Footer() {
     return (
-        <footer>
-            <img alt='little lemon footer icon' />
-            <div>
+        <footer className="row p-5">
+            <div className="col-12 col-sm-6 col-md-3 text-center">
+                <img
+                    className='img-fluid'
+                    src='footer-logo.png'
+                    alt='little lemon footer icon'
+                    style={{ maxWidth: '100px' }}
+                />
+                <br />
+                <br />
+                <p>Copyright Little Lemon 2025 &copy;</p>
+            </div>
+            <div className="col-12 col-sm-6 col-md-3">
                 <h2>Site Links</h2>
                 <ul>
                     <li>Home</li>
@@ -12,7 +22,7 @@ export default function Footer() {
                     <li>Order Online</li>
                 </ul>
             </div>
-            <div>
+            <div className="col-12 col-sm-6 col-md-3">
                 <h2>Contact</h2>
                 <ul>
                     <li>Email</li>
@@ -20,7 +30,7 @@ export default function Footer() {
                     <li>Fax</li>
                 </ul>
             </div>
-            <div>
+            <div className="col-12 col-sm-6 col-md-3">
                 <h2>Social Media</h2>
                 <ul>
                     <li>Instagram</li>
